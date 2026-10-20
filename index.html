@@ -65,7 +65,7 @@
     }
     .letters { z-index: 2; opacity: 0; transition: opacity .65s ease; }
     .letters--visible { opacity: 1; }
-    .letters--soft { opacity: .08; }
+    .letters--soft { opacity: .35; }
     .flying-letter {
       display: block; position: absolute; left: var(--x); top: var(--y);
       font-family: var(--font-serif); font-weight: 800;
@@ -278,39 +278,39 @@
     <section class="view view--active" id="welcome" aria-hidden="false">
       <div class="eyebrow">20 - 10 · Ngày Phụ nữ Việt Nam</div>
       <div class="ornament" aria-hidden="true">✦ ♡ ✦</div>
-      <h1 class="welcome-title">Có một điều <em>muốn gửi đến bạn...</em></h1>
-      <p class="welcome-note">Một chút dịu dàng, một chút lấp lánh và thật nhiều lời chúc yêu thương dành riêng cho <strong data-recipient>Hồng Lạc</strong> ✨</p>
-      <button class="primary-btn" id="startBtn" type="button">Mở lời chúc 💌</button>
-      <p class="subtle-prompt">Chạm vào để điều kỳ diệu bắt đầu ♡</p>
+      <h1 class="welcome-title">Có một điều <em>anh giữ lâu rồi…</em></h1>
+      <p class="welcome-note">Hôm nay là một ngày đặc biệt, và anh không muốn để nó trôi qua mà không nói gì với <strong data-recipient>Hồng Lạc</strong> ✨</p>
+      <button class="primary-btn" id="startBtn" type="button">Mở ra xem nhé 💌</button>
+      <p class="subtle-prompt">Chỉ mất một giây thôi, nhưng có thể ấm lòng cả ngày ♡</p>
     </section>
 
     <!-- Cảnh 2: Các chữ tìm về nhau -->
     <section class="view" id="assembling" aria-hidden="true">
       <div class="assembly-stage">
         <h1 class="assembly-title" id="assemblyTitle" aria-label="Chúc mừng 20 - 10"></h1>
-        <div class="assembly-label">Các chữ cái đang tìm về nhau... ✨</div>
+        <div class="assembly-label">Những lời này đã tìm nhau rất lâu rồi... giống như anh ✨</div>
       </div>
-      <p class="welcome-note" id="assemblyHint">Đợi một chút nhé, điều bất ngờ đang ghép thành lời chúc dành cho bạn.</p>
-      <button class="primary-btn assembly-continue" id="continueBtn" type="button" hidden>Cô gái xinh đẹp, chạm vào đây ✦</button>
-      <p class="assembly-note" id="assemblyNote" hidden>Một cơn mưa yêu thương đang chờ bạn 💗</p>
+      <p class="welcome-note" id="assemblyHint">Đợi một chút nhé, có những lời anh muốn nói với em từ rất lâu rồi...</p>
+      <button class="primary-btn assembly-continue" id="continueBtn" type="button" hidden>Em ơi, đọc tiếp nhé ✦</button>
+      <p class="assembly-note" id="assemblyNote" hidden>Anh có điều muốn nói với em 💗</p>
     </section>
 
     <!-- Cảnh 3: Thiệp chúc mừng -->
     <section class="view view--card" id="cardView" aria-hidden="true">
       <article class="greeting-card">
-        <div class="pill type-text" data-type data-template="20 - 10 · Ngày Phụ nữ Việt Nam"></div>
+        <div class="pill type-text" data-type data-template="20 - 10 · Ngày của người anh trân trọng"></div>
         <div class="card-icon" aria-hidden="true">💖</div>
-        <p class="handwriting type-text" data-type data-template="Gửi tặng đến"></p>
+        <p class="handwriting type-text" data-type data-template="Gửi đến em — người anh luôn nhớ"></p>
         <h2 class="recipient type-text" data-recipient data-type data-template="{{name}}"></h2>
         <div class="floral-rule" aria-hidden="true">✿ ♥ ✿</div>
-        <p class="wish type-text" data-type data-template="Nhân ngày 20 - 10, chúc {{name}} luôn xinh đẹp, rạng rỡ như những đóa hồng đầu mùa. Mong mỗi ngày của bạn đều ngập tràn tiếng cười và thật nhiều yêu thương. 🌸"></p>
+        <p class="wish type-text" data-type data-template="Anh biết giữa mình đã có khoảng lặng, nhưng có những người mà dù xa bao lâu, lòng vẫn không quên được. Em là một người như thế. Nhân ngày 20 - 10, anh chỉ muốn em biết: anh vẫn mong em mỗi ngày đều vui, đều được yêu thương, đều bình yên. Dù mình có ra sao, điều đó không bao giờ thay đổi. 🌸"></p>
         <div class="wish-grid">
-          <div class="wish-tile"><span class="emoji" aria-hidden="true">🌸</span><strong class="type-text" data-type data-template="Luôn xinh đẹp"></strong><p class="type-text" data-type data-template="Rạng rỡ từ nụ cười đến trái tim."></p></div>
-          <div class="wish-tile"><span class="emoji" aria-hidden="true">💝</span><strong class="type-text" data-type data-template="Thật hạnh phúc"></strong><p class="type-text" data-type data-template="Mỗi ngày đều có một niềm vui mới."></p></div>
-          <div class="wish-tile"><span class="emoji" aria-hidden="true">✨</span><strong class="type-text" data-type data-template="Bình yên"></strong><p class="type-text" data-type data-template="Nhẹ nhàng giữa muôn bộn bề."></p></div>
-          <div class="wish-tile"><span class="emoji" aria-hidden="true">🌹</span><strong class="type-text" data-type data-template="Được yêu thương"></strong><p class="type-text" data-type data-template="Nhận nhiều hơn những gì bạn mong."></p></div>
+          <div class="wish-tile"><span class="emoji" aria-hidden="true">🌸</span><strong class="type-text" data-type data-template="Luôn rạng rỡ"></strong><p class="type-text" data-type data-template="Nụ cười em vẫn đẹp nhất trong lòng anh."></p></div>
+          <div class="wish-tile"><span class="emoji" aria-hidden="true">💝</span><strong class="type-text" data-type data-template="Thật hạnh phúc"></strong><p class="type-text" data-type data-template="Dù bên ai, anh cũng mong em được trọn vẹn."></p></div>
+          <div class="wish-tile"><span class="emoji" aria-hidden="true">✨</span><strong class="type-text" data-type data-template="Bình yên mãi"></strong><p class="type-text" data-type data-template="Em xứng đáng được nhẹ nhàng giữa cuộc sống này."></p></div>
+          <div class="wish-tile"><span class="emoji" aria-hidden="true">🌹</span><strong class="type-text" data-type data-template="Được yêu thương"></strong><p class="type-text" data-type data-template="Nhiều hơn những gì em nghĩ mình xứng đáng."></p></div>
         </div>
-        <p class="closing type-text" data-type data-template="Chúc bạn một ngày 20 - 10 thật ngọt ngào! 💕"></p>
+        <p class="closing type-text" data-type data-template="Nếu em đọc đến đây, thì ít nhất anh biết — em vẫn cho anh một cơ hội để nói lời chúc. Cảm ơn em. 💕"></p>
       </article>
       <nav class="card-actions" aria-label="Điều khiển thiệp">
         <button class="secondary-btn" id="loveBtn" type="button">💗 Thả ngàn trái tim</button>
@@ -343,6 +343,7 @@
     let assemblyFlights = [];
     let busy = false;
     let waitingRainInterval = null;
+    let cardRainInterval = null;
 
     function renderTemplate(template = '') { return template.replaceAll('{{name}}', recipient); }
     function applyName() {
@@ -526,9 +527,9 @@
         };
       });
       flightFrame = requestAnimationFrame(drawAssemblyFlights);
-      after(TIME_COLLECT + 90, () => letters.replaceChildren());
+      after(TIME_COLLECT + 90, () => { letters.querySelectorAll('.is-assembling').forEach(el => el.remove()); });
     }
-    function makeCelebrationRain(total = 175) {
+    function makeCelebrationRain(total = 350) {
       celebrationRain.replaceChildren();
       if (reducedMotion) return;
       const symbols = ['💗', '💖', '💕', '♥', '🩷', '🌸', '🌺', '🌹', '🌷', '✿', '✨', '⭐', '✦'];
@@ -569,6 +570,17 @@
       if (waitingRainInterval) {
         clearInterval(waitingRainInterval);
         waitingRainInterval = null;
+      }
+    }
+    function startCardRain() {
+      stopCardRain();
+      if (reducedMotion) return;
+      cardRainInterval = setInterval(() => addWaitingRain(30), 2000);
+    }
+    function stopCardRain() {
+      if (cardRainInterval) {
+        clearInterval(cardRainInterval);
+        cardRainInterval = null;
       }
     }
     function resetTypeText() {
@@ -615,8 +627,8 @@
       typeInto(document.querySelector('.tiny-footer'), 6740, 28);
     }
     function startCardExperience() {
-      letters.replaceChildren();
-      makeCelebrationRain();
+      makeCelebrationRain(350);
+      startCardRain();
       typeCardContent();
     }
     function burstHearts(total = 95) {
@@ -665,12 +677,19 @@
       busy = true;
       stopWaitingRain();
       const assemblingEl = $('assembling');
-      assemblingEl.style.transition = 'opacity .6s ease-out';
+      // Bước 1: Fade out mượt với scale + blur
+      assemblingEl.style.transition = 'opacity .85s ease-in-out, transform .85s ease-in-out, filter .85s ease-in-out';
       assemblingEl.style.opacity = '0';
-      after(620, () => {
-        flash();
+      assemblingEl.style.transform = 'scale(0.86) translateY(-24px)';
+      assemblingEl.style.filter = 'blur(14px)';
+      // Bước 2: Flash giữa chừng tạo hiệu ứng chớp sáng
+      after(420, () => flash());
+      // Bước 3: Chuyển sang card view sau khi fade xong
+      after(920, () => {
         assemblingEl.style.transition = '';
         assemblingEl.style.opacity = '';
+        assemblingEl.style.transform = '';
+        assemblingEl.style.filter = '';
         celebrationRain.replaceChildren();
         $('continueBtn').hidden = true;
         $('continueBtn').classList.remove('is-visible');
@@ -681,7 +700,7 @@
       });
     }
     function replay() {
-      clearRun(); busy = false; stopWaitingRain(); celebrationRain.replaceChildren();
+      clearRun(); busy = false; stopWaitingRain(); stopCardRain(); celebrationRain.replaceChildren();
       $('continueBtn').hidden = true;
       $('continueBtn').classList.remove('is-visible');
       $('assemblyNote').hidden = true;
